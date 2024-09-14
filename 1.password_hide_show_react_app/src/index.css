@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+
+.password-hide::before {
+	content: "🧐";
+}
+
+.password-show::before {
+	content: "😌";
+}
+
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Arsenal", sans-serif;
+	font-size: 100%;
+}
+
+html {
+	--accent-color: #97266d;
+	--text-color: #2d3748;
+	--bg-color: #f7fafc;
+	min-block-size: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: #edf2f7;
+	font-size: 130%;
+}
+
+.passwordToggle {
+	min-inline-size: 25em;
+	padding: 2em 3.5em;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+label > p {
+	color: #718096;
+	font-size: 90%;
+}
+
+.password {
+	margin-block-start: 0.4em;
+	padding: 0.25em 0.5em;
+	color: var(--accent-color);
+}
+
+::selection {
+	color: var(--bg-color);
+	background-color: var(--accent-color);
+}
+
+button {
+	min-inline-size: 5em;
+	margin-inline-start: 1em;
+	padding: 0.25em 0.6em;
+	font-size: 110%;
+	color: var(--bg-color);
+	background-color: var(--accent-color);
+	border: none;
+	border-radius: 0.3em;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+}
+
+button:focus {
+	outline-color: var(--accent-color);
+}
+
+.password:focus {
+	outline: none;
+	box-shadow: 0 0 1px 3px var(--accent-color);
+	border-color: transparent;
+}
+
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.password-show::before, .password-hide::before {
+	margin-inline-end: 0.3em;
+}
