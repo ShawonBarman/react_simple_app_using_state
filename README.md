@@ -23,7 +23,7 @@ To run these apps locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/ShawonBarman/react_some_simple_apps_using_state.git
    cd <repo-name>
    ```
 
