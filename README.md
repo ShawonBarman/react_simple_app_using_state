@@ -24,7 +24,7 @@ To run these apps locally, follow these steps:
 
    ```bash
    git clone https://github.com/ShawonBarman/react_some_simple_apps_using_state.git
-   cd <repo-name>
+   cd react_some_simple_apps_using_state
    ```
 
 2. **Install dependencies:**
